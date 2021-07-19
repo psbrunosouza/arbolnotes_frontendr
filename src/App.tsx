@@ -8,7 +8,6 @@ import {
   Sidebar,
   Navbar,
   Nav,
-  Dropdown,
   Icon,
 } from "rsuite";
 
@@ -19,19 +18,12 @@ function App() {
         <Navbar>
           <Navbar.Header>
             <a href="#a" className="navbar-brand logo">
-              RSUITE
+              ARBOL
             </a>
           </Navbar.Header>
           <Navbar.Body>
             <Nav>
-              <Nav.Item icon={<Icon icon="home" />}>Home</Nav.Item>
-              <Nav.Item>News</Nav.Item>
-              <Nav.Item>Products</Nav.Item>
-              <Dropdown title="About">
-                <Dropdown.Item>Company</Dropdown.Item>
-                <Dropdown.Item>Team</Dropdown.Item>
-                <Dropdown.Item>Contact</Dropdown.Item>
-              </Dropdown>
+              <Nav.Item icon={<Icon icon="home" />}>Dashboard</Nav.Item>
             </Nav>
             <Nav pullRight>
               <Nav.Item icon={<Icon icon="cog" />}>Settings</Nav.Item>
