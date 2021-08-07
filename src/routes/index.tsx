@@ -2,6 +2,7 @@ import React from "react";
 import { Route, BrowserRouter, Switch } from "react-router-dom";
 import { Login } from "../pages/login";
 import { Layout } from "../pages/layout";
+import { Dashboard } from "../pages/dashboard";
 
 const LoginRoute = () => {
   return <Route component={Login} path="/login" exact />;
@@ -14,8 +15,8 @@ const RegisterRoute = () => {
 const OtherRoutes = () => {
   return (
     <Layout>
-      <Route component={Login} path="/" exact />
-      <Route component={Login} path="/home" exact />
+      <Route component={Dashboard} path="/" exact />
+      <Route component={Dashboard} path="/home" exact />
     </Layout>
   );
 };

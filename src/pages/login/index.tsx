@@ -13,11 +13,11 @@ import "./style.less";
 
 export function Login() {
   return (
-    <div>
+    <div className="login-container">
       <main>
         <Form fluid layout="horizontal" className="login-form">
           <h1>REDO</h1>
-          
+
           <FormGroup>
             <InputGroup inside>
               <FormControl name="email" placeholder="E-mail" />
@@ -31,7 +31,7 @@ export function Login() {
             <InputGroup inside>
               <FormControl name="password" placeholder="Password" />
               <InputGroup.Addon>
-                <Icon icon="lock" />
+                <Icon icon="key" />
               </InputGroup.Addon>
             </InputGroup>
           </FormGroup>
@@ -42,8 +42,14 @@ export function Login() {
           </FormGroup>
 
           <ButtonToolbar className="button-group">
-            <Button appearance="primary" type="submit">Login</Button>
+            <Button appearance="primary" type="submit">
+              LOGIN
+            </Button>
           </ButtonToolbar>
+
+          <div className="register-group">
+            <a href="#a">Register account</a>
+          </div>
         </Form>
       </main>
       <aside></aside>

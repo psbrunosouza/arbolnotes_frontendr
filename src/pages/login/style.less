@@ -1,6 +1,6 @@
-div {
+.login-container {
   display: flex;
-  width: 100%;
+  width: 100vw;
 
   main {
     background-color: #fff;
@@ -11,7 +11,7 @@ div {
     align-items: center;
     justify-content: center;
 
-    h1{
+    h1 {
       font-size: 32px;
     }
 
@@ -26,15 +26,23 @@ div {
         display: flex;
         align-items: center;
 
-        a{
+        a {
           margin-right: 12px;
         }
       }
 
-      .button-group{
+      .button-group {
+        margin-bottom: 6px;
+
         button {
           width: 100%;
         }
+      }
+
+      .register-group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
   }
