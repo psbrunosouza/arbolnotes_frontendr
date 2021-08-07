@@ -1,10 +1,8 @@
 import React from "react";
-import {Layout} from "../src/pages/layout";
+import Routes from "./routes";
 
 function App() {
-  return (
-    <Layout></Layout>
-  );
+  return <Routes />;
 }
 
 export default App;

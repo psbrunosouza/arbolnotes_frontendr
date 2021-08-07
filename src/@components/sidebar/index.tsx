@@ -5,7 +5,7 @@ import "./style.less";
 export function SidenavComponent() {
   return (
     <div className="navbar">
-      <Sidenav expanded={false}>
+      <Sidenav>
         <Sidenav.Body>
           <Nav>
             <Nav.Item eventKey="1" icon={<Icon icon="dashboard" />}>
