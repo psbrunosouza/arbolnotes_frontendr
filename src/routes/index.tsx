@@ -1,9 +1,10 @@
 import React from "react";
 import { Route, BrowserRouter, Switch } from "react-router-dom";
+import Login from '../pages/login';
 
-// const LoginRoute = () => {
-//   return <Route component={Login} path="/login" exact />;
-// };
+const LoginRoute = () => {
+  return <Route component={Login} path="/login" exact />;
+};
 
 // const RegisterRoute = () => {
 //   return <Route component={Login} path="/register" exact />;
@@ -22,11 +23,11 @@ const OtherRoutes = () => {
 const Routes = () => {
   return (
     <BrowserRouter>
-      {/* <Switch>
+      <Switch>
         <Route component={LoginRoute} path="/(login)" />
-        <Route component={RegisterRoute} path="/(register)" />
-        <Route component={OtherRoutes} />
-      </Switch> */}
+        {/* <Route component={RegisterRoute} path="/(register)" />
+        <Route component={OtherRoutes} /> */}
+      </Switch>
     </BrowserRouter>
   );
 };

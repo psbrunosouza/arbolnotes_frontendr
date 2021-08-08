@@ -8,11 +8,11 @@
 // export default App;
 
 import React, { FC } from 'react';
-import { Button } from 'antd';
+import Routes from "./routes";
 
 const App: FC = () => (
   <div className="App">
-    <Button type="primary">Button</Button>
+    <Routes/>
   </div>
 );
 
