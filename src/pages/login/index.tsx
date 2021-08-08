@@ -1,7 +1,8 @@
 import React from "react";
 import { Row, Col, Form, Input, Button, Checkbox, Typography } from "antd";
+import { User } from "../../models/user";
 
-const onSubmit = (values: any) => {
+const onSubmit = (values: User) => {
   console.log(values);
 };
 
@@ -33,12 +34,16 @@ export default function Login() {
                   <Input.Password />
                 </Form.Item>
 
-                <Row align="middle" justify="space-between" style={{ marginBottom: 12 }}>
+                <Row align="middle" justify="space-between">
                   <Col>
-                    <Checkbox>Keep logged</Checkbox>
+                    <Form.Item name="remember" valuePropName="checked">
+                      <Checkbox>Remember me</Checkbox>
+                    </Form.Item>
                   </Col>
                   <Col>
-                    <a href="#f">Forget?</a>
+                    <Form.Item>
+                      <a href="#f">Forget?</a>
+                    </Form.Item>
                   </Col>
                 </Row>
 
@@ -58,7 +63,7 @@ export default function Login() {
           </Row>
         </Col>
         <Col className="col-form-image" span={9}>
-          <Row style={{height: '100vh', background: '#8282f6'}}>
+          <Row style={{ height: "100vh", background: "#8282f6" }}>
             <Col></Col>
           </Row>
         </Col>
