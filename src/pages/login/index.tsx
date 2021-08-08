@@ -27,11 +27,11 @@ export default function Login() {
                 </Row>
 
                 <Form.Item name="email">
-                  <Input />
+                  <Input placeholder="Email"/>
                 </Form.Item>
 
                 <Form.Item name="password">
-                  <Input.Password />
+                  <Input.Password placeholder="Password" />
                 </Form.Item>
 
                 <Row align="middle" justify="space-between">
@@ -49,7 +49,7 @@ export default function Login() {
 
                 <Form.Item>
                   <Button block type="primary" htmlType="submit">
-                    Submit
+                    LOGIN
                   </Button>
                 </Form.Item>
 
