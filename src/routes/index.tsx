@@ -1,14 +1,15 @@
 import React from "react";
 import { Route, BrowserRouter, Switch } from "react-router-dom";
-import Login from '../pages/login';
+import Login from "../pages/login";
+import Register from "../pages/register";
 
 const LoginRoute = () => {
   return <Route component={Login} path="/login" exact />;
 };
 
-// const RegisterRoute = () => {
-//   return <Route component={Login} path="/register" exact />;
-// };
+const RegisterRoute = () => {
+  return <Route component={Register} path="/register" exact />;
+};
 
 const OtherRoutes = () => {
   return (
@@ -25,8 +26,8 @@ const Routes = () => {
     <BrowserRouter>
       <Switch>
         <Route component={LoginRoute} path="/(login)" />
-        {/* <Route component={RegisterRoute} path="/(register)" />
-        <Route component={OtherRoutes} /> */}
+        <Route component={RegisterRoute} path="/(register)" />
+        {/* <Route component={OtherRoutes} /> */}
       </Switch>
     </BrowserRouter>
   );
