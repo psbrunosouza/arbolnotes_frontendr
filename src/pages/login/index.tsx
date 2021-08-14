@@ -1,7 +1,9 @@
 import React from "react";
 import { Row, Col, Form, Input, Button, Checkbox, Typography } from "antd";
 import { Link } from "react-router-dom";
-import { User } from "../../models/user";
+import { User } from "../../entities/user";
+import Logo from "../../assets/logo.png";
+import "animate.css";
 
 const onSubmit = (values: User) => {
   console.log(values);
@@ -15,7 +17,7 @@ export default function Login() {
       <Row>
         <Col className="col-form-login" span={15}>
           <Row style={{ height: "100vh" }} align="middle" justify="center">
-            <Col>
+            <Col className="animate__animated animate__fadeInDown">
               <Form
                 name="basic"
                 initialValues={{ remember: true, password: "", email: "" }}
@@ -23,7 +25,13 @@ export default function Login() {
               >
                 <Row align="middle" justify="center">
                   <Col>
-                    <Title level={2}>REDO</Title>
+                    <img
+                      src={Logo}
+                      width="164px"
+                      height="164px"
+                      alt="logo"
+                      className="logo"
+                    />
                   </Col>
                 </Row>
 
@@ -66,7 +74,10 @@ export default function Login() {
             </Col>
           </Row>
         </Col>
-        <Col className="col-form-image" span={9}>
+        <Col
+          className="animate__animated animate__fadeIn col-form-image"
+          span={9}
+        >
           <Row style={{ height: "100vh", background: "#8282f6" }}>
             <Col></Col>
           </Row>
