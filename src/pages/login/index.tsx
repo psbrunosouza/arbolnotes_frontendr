@@ -1,5 +1,6 @@
 import React from "react";
 import { Row, Col, Form, Input, Button, Checkbox, Typography } from "antd";
+import { Link } from "react-router-dom";
 import { User } from "../../models/user";
 
 const onSubmit = (values: User) => {
@@ -27,7 +28,7 @@ export default function Login() {
                 </Row>
 
                 <Form.Item name="email">
-                  <Input placeholder="Email"/>
+                  <Input placeholder="Email" />
                 </Form.Item>
 
                 <Form.Item name="password">
@@ -54,9 +55,12 @@ export default function Login() {
                 </Form.Item>
 
                 <Form.Item>
-                  <Button block type="link" htmlType="button">
+                  <Link
+                    style={{ display: "flex", justifyContent: "center" }}
+                    to="/register"
+                  >
                     Create account
-                  </Button>
+                  </Link>
                 </Form.Item>
               </Form>
             </Col>
