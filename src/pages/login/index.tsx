@@ -4,9 +4,10 @@ import { Link } from "react-router-dom";
 import { User } from "../../entities/user";
 import Logo from "../../assets/logo.png";
 import "animate.css";
+import { loginService } from "../../@core/services/login.service";
 
 const onSubmit = (user: User) => {
-  console.log(user);
+  loginService(user);
 };
 
 export default function Login() {
@@ -15,7 +16,7 @@ export default function Login() {
       <Row>
         <Col className="col-form-login" span={15}>
           <Row style={{ height: "100vh" }} align="middle" justify="center">
-            <Col className="animate__animated animate__fadeInDown">
+            <Col className="animate__animated animate__fadeIn">
               <Form
                 name="form-user"
                 initialValues={{ remember: true, password: "", email: "" }}
